@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Bootstrap 4, from LayoutIt!</title>
+    <title>Gerador de Assinatura de E-Mail IFSP.SJP</title>
 
-    <meta name="description" content="Source code generated using layoutit.com">
-    <meta name="author" content="LayoutIt!">
+    <meta name="description" content="Gerador de Assinatura de E-Mail IFSP.SJP">
+    <meta name="author" content="Pedro Hugo N. França">
 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -29,31 +29,14 @@
       <p>Versão 02: <strong>Em desenvolvimento</strong></p>
 			<dl>
 				<dt>
-					Description lists
+					Como utilizar:
 				</dt>
 				<dd>
-					A description list is perfect for defining terms.
-				</dd>
-				<dt>
-					Euismod
-				</dt>
-				<dd>
-					Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.
-				</dd>
-				<dd>
-					Donec id elit non mi porta gravida at eget metus.
-				</dd>
-				<dt>
-					Malesuada porta
-				</dt>
-				<dd>
-					Etiam porta sem malesuada magna mollis euismod.
-				</dd>
-				<dt>
-					Felis euismod semper eget lacinia
-				</dt>
-				<dd>
-					Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+					Siga o modelo:
+					<p>
+						Exemplo:<br/>
+						<img alt="Modelo Assinatura" src="img/modelo1.jpg" height="130px">
+					</p>
 				</dd>
 			</dl>
 		</div>
@@ -61,57 +44,147 @@
 	<div class="row">
 		<div class="col-md-4">
 			<form role="form">
+				Primeira Coluna:
 				<div class="form-group">
-					 
-					<label for="exampleInputEmail1">
-						Email address
+					<label for="sigla-setor">
+						Sigla-setor (Linha 1)
 					</label>
-					<input type="email" class="form-control" id="exampleInputEmail1">
+					<input type="sigla" class="form-control" id="sigla" placeholder="SJP / DRG / CTI / CRA | Linha 1">
+					
 				</div>
 				<div class="form-group">
-					 
-					<label for="exampleInputPassword1">
-						Password
+					<label for="nome-setor1">
+						Nome do setor (Linha 2 Cinza)
 					</label>
-					<input type="password" class="form-control" id="exampleInputPassword1">
+					<input type="nome-setor1" class="form-control" id="nome-setor1" placeholder="Diretoria Geral | Coordenadoria de | Coordenador de | Linha 2 Cinza">
+					
 				</div>
 				<div class="form-group">
-					 
-					<label for="exampleInputFile">
-						File input
+					<label for="nome-setor2">
+						Nome do setor (Linha 3)
 					</label>
-					<input type="file" class="form-control-file" id="exampleInputFile">
-					<p class="help-block">
-						Example block-level help text here.
-					</p>
+					<input type="nome-setor2" class="form-control" id="nome-setor2" placeholder="Tecnologia da  | Comunicação | Linha 3">
+					
 				</div>
-				<div class="checkbox">
-					 
-					<label>
-						<input type="checkbox"> Check me out
+
+				<div class="form-group">
+					<label for="nome-setor3">
+						Nome do setor (Linha 4)
 					</label>
-				</div> 
+					<input type="nome-setor3" class="form-control" id="nome-setor3" placeholder="Informação  | Em branco | Linha 4">
+					
+				</div>
+<!-- Adicionar linha da msg motivacional? -->
+<!-- Coluna 2-->
+				Coluna 2
+				<div class="form-group">
+					<label for="nome">
+						Nome
+					</label>
+					<input type="nome" class="form-control" id="nome" placeholder="Fulano de Tal">
+				</div>
+
+				<div class="form-group">
+					<label for="cargo">
+						Cargo
+					</label>
+					<input type="cargo" class="form-control" id="cargo" placeholder="Coordenador de TI">
+				</div>
+
+				<div class="form-group">
+					<label for="setor">
+						Setor
+					</label>
+					<input type="setor" class="form-control" id="setor" placeholder="Tecnologia da Informação">
+				</div>
+
+				<div class="form-group">
+					<label for="email">
+						Email/Ramal
+					</label>
+					<input type="email" class="form-control" id="email" placeholder="fulano.de.tal@ifsp.edu.br | 17-99999-9999">
+				</div>
+				<!-- Configurações Padrões Ocultas (site, logo, redes sociais)  -->
+				<div id="card-config">
+					<div class="card">
+						<div class="card-header">
+							 <a class="card-link collapsed" data-toggle="collapse" data-parent="#card-config" href="#card-element-config">Configurações Padrões</a>
+						</div>
+						<div id="card-element-config" class="collapse">
+							<div class="card-body">
+								<div class="form-group">
+									<label for="site">
+										Site
+									</label>
+									<input type="site" class="form-control" id="site" value="https://sjp.ifsp.edu.br">
+								</div>
+				
+								<div class="form-group">
+									<label for="logo">
+										Logo
+									</label>
+									<input type="logo" class="form-control" id="logo" value="https://sjp.ifsp.edu.br/images/Logo_Campus/Marca_IFSP_SJP_V_01.png"> 
+								</div>
+								
+								<div class="form-group">
+									<label for="youtube">
+										Youtube
+									</label>
+									<i class="fab fa-youtube"></i>
+									<input type="youtube" class="form-control" id="youtube" value="https://www.youtube.com/c/ifspriopreto"> 
+								</div>
+
+								<div class="form-group">
+									<label for="twitter">
+										Twitter
+									</label>
+									<i class="fab fa-twitter"></i>
+									<input type="twitter" class="form-control" id="twitter" value="https://www.twitter.com/ifspriopreto/"> 
+								</div>
+
+								<div class="form-group">
+									<label for="facebook">
+										Facebook	
+									</label>
+									<i class="fab fa-facebook"></i>
+									<input type="facebook" class="form-control" id="facebook" value="https://facebook.com/ifspriopreto"> 
+								</div>
+
+								<div class="form-group">
+									<label for="instagran">
+										Instagran
+									</label>
+									<i class="fab fa-instagran"></i>
+									<input type="instagran" class="form-control" id="instagran" value="https://www.instagram.com/ifsp_riopreto"> 
+								</div>
+								
+
+							</div><!--fim card body-->
+						</div><!--fim card config-->
+					</div><!--fim card-->
+					
+				</div>
+				
 				<button type="submit" class="btn btn-primary">
-					Submit
+					Gerar Assinatura
 				</button>
 			</form>
 		</div>
 		<div class="col-md-8">
+			Espaçamento:
 			<div class="btn-group" role="group">
 				 
 				<button class="btn btn-secondary" type="button">
-					Left
+					Pequeno
 				</button> 
 				<button class="btn btn-secondary" type="button">
-					Center
+					Padrão
 				</button> 
 				<button class="btn btn-secondary" type="button">
-					Right
+					Grande
 				</button> 
-				<button class="btn btn-secondary" type="button">
-					Justify
-				</button>
 			</div>
+			<p>Visualização:</p>
 			<table class="table">
 				<thead>
 					<tr>
@@ -202,14 +275,15 @@
 					</tr>
 				</tbody>
 			</table>
-			 <a id="modal-317397" href="#modal-container-317397" role="button" class="btn" data-toggle="modal">Launch demo modal</a>
+
+			<a id="modal-317397" href="#modal-container-317397" role="button" class="btn" data-toggle="modal">Exibir apenas o resultado.</a>
 			
 			<div class="modal fade" id="modal-container-317397" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 				<div class="modal-dialog" role="document">
 					<div class="modal-content">
 						<div class="modal-header">
 							<h5 class="modal-title" id="myModalLabel">
-								Modal title
+								Selecione, copie o resultado e cole no campo de assinatura de seu e-mail. 
 							</h5> 
 							<button type="button" class="close" data-dismiss="modal">
 								<span aria-hidden="true">×</span>
@@ -232,7 +306,7 @@
 				</div>
 				
 			</div>
-			<img alt="Bootstrap Image Preview" src="https://www.layoutit.com/img/sports-q-c-140-140-3.jpg">
+			
 		</div>
 	</div>
 </div>
