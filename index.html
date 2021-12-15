@@ -1,613 +1,427 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gerador de Assinatura de E-Mail IFSP.SJP</title>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <meta name="description" content="Gerador de Assinatura de E-Mail IFSP.SJP">
-    <meta name="author" content="Pedro Hugo N. França">
+	<title>Gerador de Assinatura de E-Mail IFSP.SJP</title>
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+	<meta name="description" content="Gerador de Assinatura de E-Mail IFSP.SJP">
+	<meta name="author" content="Pedro Hugo N. França">
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
 	<!-- Add icon library -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  </head>
-  <body>
+</head>
 
-    <div class="container-fluid">
-	<div class="row">
-		<div class="col-md-12">
-			<h3>
-				Gerador de Assinatura de E-Mail IFSP.SJP
-        
-			</h3>
-			<p>
-      <a href="v01/index.html" class="btn">Gerar Assinatura Versão 01 </a>
-			</p>
-			<div class="alert alert-success">Versão 02: <strong>Em desenvolvimento</strong></div>
-			<dl>
-				<dt>
-					Como utilizar:
-				</dt>
-				<dd>
-					Siga o modelo:
-					<p>
-						Exemplo:<br/>
-						<img alt="Modelo Assinatura" src="img/modelo1.jpg" height="110px">
-					</p>
-				</dd>
-			</dl>
+<body>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h3>
+					Gerador de Assinatura de E-Mail IFSP.SJP
+
+				</h3>
+				<p>
+					<a href="v01/index.html" class="btn">Gerar Assinatura Versão 01 </a>
+				</p>
+				<div class="alert alert-success">Versão 02: <strong>Em desenvolvimento</strong></div>
+				<dl>
+					<dt>
+						Como utilizar:
+					</dt>
+					<dd>
+						Siga o modelo:
+						<p>
+							Exemplo:<br />
+							<img alt="Modelo Assinatura" src="img/modelo1.jpg" height="110px">
+						</p>
+					</dd>
+				</dl>
+			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4">
-			<div class="alert alert-success">Primeira Coluna:</div>
-			<form role="form">
-				
-				<div class="form-group">
-					<label for="sigla-setor">
-						Sigla-setor (Linha 1)
-					</label>
-					<input type="sigla" class="form-control" id="sigla" placeholder="SJP / DRG / CTI / CRA | Linha 1">
-					
-				</div>
-				<div class="form-group">
-					<label for="nome-setor1">
-						Nome do setor (Linha 2 Cinza)
-					</label>
-					<input type="nome-setor1" class="form-control" id="nome-setor1" placeholder="Diretoria Geral | Coordenadoria de | Coordenador de | Linha 2 Cinza">
-					
-				</div>
-				<div class="form-group">
-					<label for="nome-setor2">
-						Nome do setor (Linha 3)
-					</label>
-					<input type="nome-setor2" class="form-control" id="nome-setor2" placeholder="Tecnologia da  | Comunicação | Linha 3">
-					
-				</div>
+		<div class="row">
+			<div class="col-md-4">
+				<div class="alert alert-success">Primeira Coluna:</div>
+				<form role="form">
 
-				<div class="form-group">
-					<label for="nome-setor3">
-						Nome do setor (Linha 4)
-					</label>
-					<input type="nome-setor3" class="form-control" id="nome-setor3" placeholder="Informação  | Em branco | Linha 4">
-					
-				</div>
-<!-- Adicionar linha da msg motivacional? -->
-<!-- Coluna 2-->
-				<div class="alert alert-success">Segunda Coluna</div>
-				<div class="form-group">
-					<label for="nome">
-						Nome
-					</label>
-					<input type="nome" class="form-control" id="nome" placeholder="Fulano de Tal">
-				</div>
+					<div class="form-group">
+						<label for="sigla-setor">
+							Sigla-setor (Linha 1)
+						</label>
+						<input type="sigla" class="form-control" id="sigla"
+							placeholder="SJP / DRG / CTI / CRA | Linha 1">
 
-				<div class="form-group">
-					<label for="cargo">
-						Cargo
-					</label>
-					<input type="cargo" class="form-control" id="cargo" placeholder="Coordenador de TI">
-				</div>
+					</div>
+					<div class="form-group">
+						<label for="nome-setor1">
+							Nome do setor (Linha 2 Cinza)
+						</label>
+						<input type="nome-setor1" class="form-control" id="nome-setor1"
+							placeholder="Diretoria Geral | Coordenadoria de | Coordenador de | Linha 2 Cinza">
 
-				<div class="form-group">
-					<label for="setor">
-						Setor
-					</label>
-					<input type="setor" class="form-control" id="setor" placeholder="Tecnologia da Informação">
-				</div>
+					</div>
+					<div class="form-group">
+						<label for="nome-setor2">
+							Nome do setor (Linha 3)
+						</label>
+						<input type="nome-setor2" class="form-control" id="nome-setor2"
+							placeholder="Tecnologia da  | Comunicação | Linha 3">
 
-				<div class="form-group">
-					<label for="email">
-						Email/Ramal
-					</label>
-					<input type="email" class="form-control" id="email" placeholder="fulano.de.tal@ifsp.edu.br | 17-99999-9999">
-				</div>
-				Espaçamento:
-				<div class="btn-group" role="group">
-					
-					<button class="btn btn-secondary" type="button">
-						Pequeno
-					</button> 
-					<button class="btn btn-secondary" type="button">
-						Padrão
-					</button> 
-					<button class="btn btn-secondary" type="button">
-						Grande
-					</button> 
-				</div>
-				<!-- Configurações Padrões Ocultas (site, logo, redes sociais)  -->
-				<div id="card-config">
-					<div class="card">
-						<div class="card-header">
-							 <a class="card-link collapsed" data-toggle="collapse" data-parent="#card-config" href="#card-element-config">Configurações Padrões</a>
+					</div>
+
+					<div class="form-group">
+						<label for="nome-setor3">
+							Nome do setor (Linha 4)
+						</label>
+						<input type="nome-setor3" class="form-control" id="nome-setor3"
+							placeholder="Informação  | Em branco | Linha 4">
+
+					</div>
+					<!-- Adicionar linha da msg motivacional? -->
+					<!-- Coluna 2-->
+					<div class="alert alert-success">Segunda Coluna</div>
+					<div class="form-group">
+						<label for="nome">
+							Nome
+						</label>
+						<input type="nome" class="form-control" id="nome" placeholder="Fulano de Tal">
+					</div>
+
+					<div class="form-group">
+						<label for="cargo">
+							Cargo
+						</label>
+						<input type="cargo" class="form-control" id="cargo" placeholder="Coordenador de TI">
+					</div>
+
+					<div class="form-group">
+						<label for="setor">
+							Setor
+						</label>
+						<input type="setor" class="form-control" id="setor" placeholder="Tecnologia da Informação">
+					</div>
+
+					<div class="form-group">
+						<label for="email">
+							Email/Ramal
+						</label>
+						<input type="email" class="form-control" id="email"
+							placeholder="fulano.de.tal@ifsp.edu.br | 17-99999-9999">
+					</div>
+					Espaçamento:
+					<div class="btn-group" role="group">
+
+						<button class="btn btn-secondary" type="button">
+							Pequeno
+						</button>
+						<button class="btn btn-secondary" type="button">
+							Padrão
+						</button>
+						<button class="btn btn-secondary" type="button">
+							Grande
+						</button>
+					</div>
+					<!-- Configurações Padrões Ocultas (site, logo, redes sociais)  -->
+					<div id="card-config">
+						<div class="card">
+							<div class="card-header">
+								<a class="card-link collapsed" data-toggle="collapse" data-parent="#card-config"
+									href="#card-element-config">Configurações Padrões</a>
+							</div>
+							<div id="card-element-config" class="collapse">
+								<div class="card-body">
+									<div class="form-group">
+										<label for="site">
+											Site
+										</label>
+										<input type="site" class="form-control" id="site"
+											value="https://sjp.ifsp.edu.br">
+									</div>
+
+									<div class="form-group">
+										<label for="logo">
+											Logo
+										</label>
+										<input type="logo" class="form-control" id="logo"
+											value="https://sjp.ifsp.edu.br/images/Logo_Campus/Marca_IFSP_SJP_V_01.png">
+									</div>
+
+									<div class="form-group">
+										<label for="youtube">
+											<i class="fa fa-youtube"></i>Youtube
+										</label>
+										<input type="youtube" class="form-control" id="youtube"
+											value="https://www.youtube.com/c/ifspriopreto">
+									</div>
+
+									<div class="form-group">
+										<label for="twitter">
+											<i class="fa fa-twitter"></i>Twitter
+										</label>
+										<input type="twitter" class="form-control" id="twitter"
+											value="https://www.twitter.com/ifspriopreto/">
+									</div>
+
+									<div class="form-group">
+										<label for="facebook">
+											<i class="fa fa-facebook"></i>Facebook
+										</label>
+										<input type="facebook" class="form-control" id="facebook"
+											value="https://facebook.com/ifspriopreto">
+									</div>
+
+									<div class="form-group">
+										<label for="instagram">
+											<i class="fa fa-instagram"></i>Instagran
+										</label>
+										<input type="instagram" class="form-control" id="instagram"
+											value="https://www.instagram.com/ifsp_riopreto">
+									</div>
+
+
+								</div>
+								<!--fim card body-->
+							</div>
+							<!--fim card config-->
 						</div>
-						<div id="card-element-config" class="collapse">
-							<div class="card-body">
-								<div class="form-group">
-									<label for="site">
-										Site
-									</label>
-									<input type="site" class="form-control" id="site" value="https://sjp.ifsp.edu.br">
-								</div>
-				
-								<div class="form-group">
-									<label for="logo">
-										Logo
-									</label>
-									<input type="logo" class="form-control" id="logo" value="https://sjp.ifsp.edu.br/images/Logo_Campus/Marca_IFSP_SJP_V_01.png"> 
-								</div>
-								
-								<div class="form-group">
-									<label for="youtube">
-										<i class="fa fa-youtube"></i>Youtube
-									</label>
-									<input type="youtube" class="form-control" id="youtube" value="https://www.youtube.com/c/ifspriopreto"> 
-								</div>
+						<!--fim card-->
 
-								<div class="form-group">
-									<label for="twitter">
-										<i class="fa fa-twitter"></i>Twitter
-									</label>
-									<input type="twitter" class="form-control" id="twitter" value="https://www.twitter.com/ifspriopreto/"> 
-								</div>
+					</div>
 
-								<div class="form-group">
-									<label for="facebook">
-										<i class="fa fa-facebook"></i>Facebook	
-									</label>
-									<input type="facebook" class="form-control" id="facebook" value="https://facebook.com/ifspriopreto"> 
-								</div>
+					<button type="submit" class="btn btn-primary">
+						Gerar Assinatura
+					</button>
+				</form>
+			</div>
+			<div class="col-md-8">
 
-								<div class="form-group">
-									<label for="instagram">
-										<i class="fa fa-instagram"></i>Instagran
-									</label>
-									<input type="instagram" class="form-control" id="instagram" value="https://www.instagram.com/ifsp_riopreto"> 
-								</div>
-								
+				<div class="alert alert-success">Visualização:</div>
 
-							</div><!--fim card body-->
-						</div><!--fim card config-->
-					</div><!--fim card-->
-					
-				</div>
-				
-				<button type="submit" class="btn btn-primary">
-					Gerar Assinatura
-				</button>
-			</form>
-		</div>
-		<div class="col-md-8">
-			
-			<div class="alert alert-success">Visualização:</div>
-			
-			
-<table border=0>
- <tr>
-  <td width=136 rowspan=2 valign=top style='width:120pt;border:none;
+
+				<table border=0>
+					<tr>
+						<td width=136 rowspan=2 valign=top style='width:120pt;border:none;
   border-right:solid windowtext 1.0pt; 
   padding:0cm 5.4pt 0cm 5.4pt;height:16.75pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><b><span style='font-size:28.0pt'>
-  CTI
-</span></b> <b><span
-  style='font-size:20.0pt'> </span></b></p>
-  </td>
-  <td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
+										CTI
+									</span></b> <b><span style='font-size:20.0pt'> </span></b></p>
+						</td>
+						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
       
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.75pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:12.0pt;color:gray;'>
-  PEDRO HUGO NOGUEIRA FRANÇA</span></p>
-  </td>
-  <td width=136 rowspan=5 valign=top style='width:101.8pt;border:none;
+									PEDRO HUGO NOGUEIRA FRANÇA</span></p>
+						</td>
+						<td width=136 rowspan=5 valign=top style='width:101.8pt;border:none;
     padding:0cm 5.4pt 0cm 5.4pt;
   height:16.75pt'>
-  <p    align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><img width=112 height=109
-  src="img/logo.jpg"></span> </p>
-  </td>
-  <td width=34 rowspan=5 style='width:25.8pt;padding:0cm 5.4pt 0cm 5.4pt;
+							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:normal'><img width=112 height=109 src="img/logo.jpg"></span> </p>
+						</td>
+						<td width=34 rowspan=5 style='width:25.8pt;padding:0cm 5.4pt 0cm 5.4pt;
   height:16.75pt'>
-  <p    align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a
-  href="https://www.youtube.com/c/ifspriopreto"><img width=19 height=19
-  src="img/social01.png"></a></p>
-  <p    align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a
-  href="https://www.twitter.com/ifspriopreto"><img width=19 height=19
-  src="img/social02.png"></a> </p>
-  <p    align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a
-  href="https://www.facebook.com/ifspriopreto"><img width=19 height=19
-  src="img/social03.png"> </a> </p>
-  <p    align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a
-  href="https://www.instagram.com/ifsp_riopreto"><img
-  border=0 width=19 height=19 src="img/social04.png"> </a> </p>
-  </td>
- </tr>
- <tr style='height:16.8pt'>
-  <td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
+							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:130%'><a href="https://www.youtube.com/c/ifspriopreto"><img width=19 height=19
+										src="img/social01.png"></a></p>
+							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:130%'><a href="https://www.twitter.com/ifspriopreto"><img width=19 height=19
+										src="img/social02.png"></a> </p>
+							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:130%'><a href="https://www.facebook.com/ifspriopreto"><img width=19 height=19
+										src="img/social03.png"> </a> </p>
+							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
+  text-align:center;line-height:130%'><a href="https://www.instagram.com/ifsp_riopreto"><img border=0 width=19
+										height=19 src="img/social04.png"> </a> </p>
+						</td>
+					</tr>
+					<tr style='height:16.8pt'>
+						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
       
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'> <b><span style='font-size:12.0pt;
   color:gray;'>Coordenador de TI </span></b></p>
-  </td>
- </tr>
- <tr style='height:16.8pt'>
-  <td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
+						</td>
+					</tr>
+					<tr style='height:16.8pt'>
+						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'> <b><span style='font-size:12.0pt;
  color:gray;'>Coordenadoria de</span></b><span style='font-size:12.0pt;color:gray; '> </span> </p>
-  </td>
-  <td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
+						</td>
+						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
       
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:12.0pt;color:gray;
    '>Tecnologia da Informação </span></p>
-  </td>
- </tr>
- <tr style='height:16.8pt'>
-  <td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
+						</td>
+					</tr>
+					<tr style='height:16.8pt'>
+						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'> <b>Tecnologia da  </b></p>
-  </td>
-  <td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+  normal'> <b>Tecnologia da </b></p>
+						</td>
+						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
       
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><span style='font-size:12.0pt;color:gray;
    '>pedro.franca@ifsp.edu.br </span></p>
-  </td>
- </tr>
- <tr style='height:16.8pt'>
-  <td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
+						</td>
+					</tr>
+					<tr style='height:16.8pt'>
+						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'> <b>Informação </b></p>
-  </td>
-  <td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
+						</td>
+						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
       
    padding:0cm 5.4pt 0cm 5.4pt;
   height:16.8pt'>
-  <p    style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
+							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
   normal'><a href="https://sjp.ifsp.edu.br/"><b><span style='font-size:8.5pt;
   font-family:"Arial","sans-serif";color:#259235'>https://sjp.ifsp.edu.br/</span></b></a> </p>
-  </td>
- </tr>
-</table>
-			
-			
-			
-			
-<p></p>
-			
-			
-<style type="text/css">
-	.tg  {border-collapse:collapse;border-spacing:0;}
-	.tg td{border-color:black;border-style:solid;border-style:1px;font-family:Arial, sans-serif;font-size:14px;
-	  overflow:hidden;padding:10px 5px;word-break:normal;}
-	.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-	  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-	.tg .tg-ojej{font-size:36px;text-align:left;vertical-align:top}
-	.tg .tg-baqh{text-align:center;vertical-align:top}
-	.tg .tg-0lax{text-align:left;vertical-align:top}
-	</style>
-	<table class="tg">
-	<tbody>
-	  <tr>
-		<td class="tg-ojej" rowspan="2">CTI</td>
-		<td class="tg-0lax">Pedro Hugo Nogueira França</td>
-		<td class="tg-0lax" rowspan="5"><img width=112 height=109 src="img/logo.jpg">
-		<td class="tg-baqh" rowspan="5"> <img src="img/social01.png" alt="Image" width="29" height="29"><br></td>
-	  </tr>
-	  <tr>
-		<td class="tg-0lax">Coordenador de TI</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0lax">Coordenadoria de</td>
-		<td class="tg-0lax">Tecnologia da Informação</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0lax">Tecnologia da</td>
-		<td class="tg-0lax">pedro.franca@ifsp.edu.br</td>
-	  </tr>
-	  <tr>
-		<td class="tg-0lax">Informação</td>
-		<td class="tg-0lax">https://sjp.ifsp.edu.br/</td>
-	  </tr>
-	</tbody>
-	</table>
-			
-			
-			
-			
-			<p></p>
+						</td>
+					</tr>
+				</table>
 
-			<div id=":6w" class="IN" style="display: block;"><div id=":2l" class="Am aiL IP Al editable Xp0HJf-LW-avf" hidefocus="true" aria-label="Assinatura" g_editable="true" role="textbox" aria-multiline="true" contenteditable="true" style="direction: ltr;"><table class="MsoTableGrid" border="0" cellspacing="0" cellpadding="0" style="border-collapse:collapse;mso-table-layout-alt:fixed;border:none;
-				mso-yfti-tbllook:1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt;mso-border-insideh:
-				none;mso-border-insidev:none">
-				<tbody><tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes;height:16.75pt">
-				 <td width="136" rowspan="2" valign="top" style="width:101.85pt;border:none;
-				 border-right:solid windowtext 1.0pt;mso-border-right-alt:solid windowtext .25pt;
-				 padding:0cm 5.4pt 0cm 5.4pt;height:16.75pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><b><span style="font-size:28.0pt;
-				 mso-bidi-font-size:20.0pt">CTI</span></b><b><span style="font-size:20.0pt"><o:p></o:p></span></b></p>
-				 </td>
-				 <td width="297" style="width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-left-alt:solid windowtext .25pt;mso-border-left-alt:solid windowtext .25pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.75pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;color:gray;
-				 mso-themecolor:background1;mso-themeshade:128">PEDRO HUGO NOGUEIRA FRANÇA<o:p></o:p></span></p>
-				 </td>
-				 <td width="136" rowspan="5" valign="top" style="width:101.8pt;border:none;
-				 mso-border-left-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.75pt">
-				 <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
-				 text-align:center;line-height:normal"><!--[if gte vml 1]><v:shapetype id="_x0000_t75"
-				  coordsize="21600,21600" o:spt="75" o:preferrelative="t" path="m@4@5l@4@11@9@11@9@5xe"
-				  filled="f" stroked="f">
-				  <v:stroke joinstyle="miter"/>
-				  <v:formulas>
-				   <v:f eqn="if lineDrawn pixelLineWidth 0"/>
-				   <v:f eqn="sum @0 1 0"/>
-				   <v:f eqn="sum 0 0 @1"/>
-				   <v:f eqn="prod @2 1 2"/>
-				   <v:f eqn="prod @3 21600 pixelWidth"/>
-				   <v:f eqn="prod @3 21600 pixelHeight"/>
-				   <v:f eqn="sum @0 0 1"/>
-				   <v:f eqn="prod @6 1 2"/>
-				   <v:f eqn="prod @7 21600 pixelWidth"/>
-				   <v:f eqn="sum @8 21600 0"/>
-				   <v:f eqn="prod @7 21600 pixelHeight"/>
-				   <v:f eqn="sum @10 21600 0"/>
-				  </v:formulas>
-				  <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
-				  <o:lock v:ext="edit" aspectratio="t"/>
-				 </v:shapetype><v:shape id="Imagem_x0020_20" o:spid="_x0000_i1029" type="#_x0000_t75"
-				  style='width:84pt;height:81.75pt;visibility:visible;mso-wrap-style:square'>
-				  <v:imagedata src="file:///C:\Users\PeDr0-PC\AppData\Local\Temp\msohtmlclip1\01\clip_image001.png"
-				   o:title="" croptop="4018f" cropbottom="3235f"/>
-				 </v:shape><![endif]--><!--[if !vml]--><img width="112" height="109" src="file:///C:/Users/PeDr0-PC/AppData/Local/Temp/msohtmlclip1/01/clip_image002.jpg" v:shapes="Imagem_x0020_20" jslog="138226; u014N:xr6bB; 53:W2ZhbHNlXQ.."><!--[endif]--><o:p></o:p></p>
-				 </td>
-				 <td width="34" rowspan="5" style="width:25.8pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.75pt">
-				 <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
-				 text-align:center;line-height:130%"><!--[if gte vml 1]><v:shape id="Picture_x0020_8" o:spid="_x0000_i1028"
-				  type="#_x0000_t75" style='width:14.25pt;height:14.25pt;visibility:visible;
-				  mso-wrap-style:square' fillcolor="#4f81bd [3204]">
-				  <v:imagedata src="file:///C:\Users\PeDr0-PC\AppData\Local\Temp\msohtmlclip1\01\clip_image003.png"
-				   o:title=""/>
-				  <v:shadow color="#eeece1 [3214]"/>
-				 </v:shape><![endif]--><!--[if !vml]--><img width="19" height="19" src="file:///C:/Users/PeDr0-PC/AppData/Local/Temp/msohtmlclip1/01/clip_image004.png" v:shapes="Picture_x0020_8" jslog="138226; u014N:xr6bB; 53:W2ZhbHNlXQ.."><!--[endif]--><o:p></o:p></p>
-				 <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
-				 text-align:center;line-height:130%"><!--[if gte vml 1]><v:shape id="Picture_x0020_9" o:spid="_x0000_i1027"
-				  type="#_x0000_t75" style='width:14.25pt;height:14.25pt;visibility:visible;
-				  mso-wrap-style:square' fillcolor="#4f81bd [3204]">
-				  <v:imagedata src="file:///C:\Users\PeDr0-PC\AppData\Local\Temp\msohtmlclip1\01\clip_image005.png"
-				   o:title=""/>
-				  <v:shadow color="#eeece1 [3214]"/>
-				 </v:shape><![endif]--><!--[if !vml]--><img width="19" height="19" src="file:///C:/Users/PeDr0-PC/AppData/Local/Temp/msohtmlclip1/01/clip_image006.png" v:shapes="Picture_x0020_9" jslog="138226; u014N:xr6bB; 53:W2ZhbHNlXQ.."><!--[endif]--><o:p></o:p></p>
-				 <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
-				 text-align:center;line-height:130%"><!--[if gte vml 1]><v:shape id="Picture_x0020_10" o:spid="_x0000_i1026"
-				  type="#_x0000_t75" style='width:14.25pt;height:14.25pt;visibility:visible;
-				  mso-wrap-style:square' fillcolor="#4f81bd [3204]">
-				  <v:imagedata src="file:///C:\Users\PeDr0-PC\AppData\Local\Temp\msohtmlclip1\01\clip_image007.png"
-				   o:title=""/>
-				  <v:shadow color="#eeece1 [3214]"/>
-				 </v:shape><![endif]--><!--[if !vml]--><img width="19" height="19" src="file:///C:/Users/PeDr0-PC/AppData/Local/Temp/msohtmlclip1/01/clip_image008.png" v:shapes="Picture_x0020_10" jslog="138226; u014N:xr6bB; 53:W2ZhbHNlXQ.."><!--[endif]--><o:p></o:p></p>
-				 <p class="MsoNormal" align="center" style="margin-bottom:0cm;margin-bottom:.0001pt;
-				 text-align:center;line-height:130%"><a href="https://www.instagram.com/ifsp_riopreto"><span style="color: windowtext; text-decoration-line: none;"><!--[if gte vml 1]><v:shape id="Picture_x0020_4" o:spid="_x0000_i1025"
-				  type="#_x0000_t75" href="https://www.instagram.com/ifsp_riopreto" style='width:14.25pt;
-				  height:14.25pt;visibility:visible;mso-wrap-style:square' o:button="t"
-				  fillcolor="#4f81bd [3204]">
-				  <v:fill o:detectmouseclick="t"/>
-				  <v:imagedata src="file:///C:\Users\PeDr0-PC\AppData\Local\Temp\msohtmlclip1\01\clip_image009.png"
-				   o:title=""/>
-				  <v:shadow color="#eeece1 [3214]"/>
-				 </v:shape><![endif]--><!--[if !vml]--><img border="0" width="19" height="19" src="file:///C:/Users/PeDr0-PC/AppData/Local/Temp/msohtmlclip1/01/clip_image010.png" v:shapes="Picture_x0020_4" jslog="138226; u014N:xr6bB; 53:W2ZhbHNlXQ.."><!--[endif]--></span></a><o:p></o:p></p>
-				 </td>
-				</tr>
-				<tr style="mso-yfti-irow:1;height:16.8pt">
-				 <td width="297" style="width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-left-alt:solid windowtext .25pt;mso-border-left-alt:solid windowtext .25pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><b><span style="font-size:12.0pt;
-				 mso-bidi-font-size:11.0pt;color:gray;mso-themecolor:background1;mso-themeshade:
-				 128">Coordenador de TI<o:p></o:p></span></b></p>
-				 </td>
-				</tr>
-				<tr style="mso-yfti-irow:2;height:16.8pt">
-				 <td width="136" valign="top" style="width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><b><span style="font-size:12.0pt;
-				 mso-bidi-font-size:11.0pt;color:gray;mso-themecolor:background1;mso-themeshade:
-				 128">Coordenadoria de</span></b><span style="font-size:12.0pt;mso-bidi-font-size:
-				 11.0pt;color:gray;mso-themecolor:background1;mso-themeshade:128"> </span><o:p></o:p></p>
-				 </td>
-				 <td width="297" style="width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-left-alt:solid windowtext .25pt;mso-border-left-alt:solid windowtext .25pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;color:gray;
-				 mso-themecolor:background1;mso-themeshade:128">Tecnologia da Informação<o:p></o:p></span></p>
-				 </td>
-				</tr>
-				<tr style="mso-yfti-irow:3;height:16.8pt">
-				 <td width="136" valign="top" style="width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><b>Tecnologia da <o:p></o:p></b></p>
-				 </td>
-				 <td width="297" style="width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-left-alt:solid windowtext .25pt;mso-border-left-alt:solid windowtext .25pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><span style="font-size:12.0pt;mso-bidi-font-size:11.0pt;color:gray;
-				 mso-themecolor:background1;mso-themeshade:128">pedro.franca@ifsp.edu.br<o:p></o:p></span></p>
-				 </td>
-				</tr>
-				<tr style="mso-yfti-irow:4;mso-yfti-lastrow:yes;height:16.8pt">
-				 <td width="136" valign="top" style="width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><b>Informação<o:p></o:p></b></p>
-				 </td>
-				 <td width="297" style="width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-				 mso-border-left-alt:solid windowtext .25pt;mso-border-left-alt:solid windowtext .25pt;
-				 mso-border-right-alt:solid windowtext .25pt;padding:0cm 5.4pt 0cm 5.4pt;
-				 height:16.8pt">
-				 <p class="MsoNormal" style="margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-				 normal"><a href="https://sjp.ifsp.edu.br/"><b><span style="font-size:8.5pt;
-				 font-family:&quot;Arial&quot;,&quot;sans-serif&quot;;color:#259235">https://sjp.ifsp.edu.br/</span></b></a><o:p></o:p></p>
-				 </td>
-				</tr>
-			   </tbody></table></div></div>
-			
-			
-			
-			   <p></p>
-			
-			
-			
-			
-			<table class="table">
-				<tbody>
-					<tr>
-						<td rowspan="2" style="border-right: 2px solid #000; font-size: 28.0pt;">
-							<b>CTI</b>
-						</td>
-						<td>
-							Pedro Hugo Nogueira França
-						</td>
-						<td rowspan="5">
-							<img width=112 height=109
-  src="img/logo.jpg">
-						</td>
-						<td>
-							<img width=19 height=19
-  src="img/social01.png">
-						</td>
-					</tr>
-					<tr class="table-active">
-						<td>
-							
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						
-					</tr>
-					<tr class="table-success">
-						<td>
-							2
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							02/04/2012
-						</td>
-						<td>
-							Declined
-						</td>
-					</tr>
-					<tr class="table-warning">
-						<td>
-							3
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							03/04/2012
-						</td>
-						<td>
-							Pending
-						</td>
-					</tr>
-					<tr class="table-danger">
-						<td>
-							4
-						</td>
-						<td>
-							TB - Monthly
-						</td>
-						<td>
-							04/04/2012
-						</td>
-						<td>
-							Call in to confirm
-						</td>
-					</tr>
-				</tbody>
-			</table>
 
-			<a id="modal-317397" href="#modal-container-317397" role="button" class="btn" data-toggle="modal">Exibir apenas o resultado.</a>
-			
-			<div class="modal fade" id="modal-container-317397" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-				<div class="modal-dialog" role="document">
-					<div class="modal-content">
-						<div class="modal-header">
-							<h5 class="modal-title" id="myModalLabel">
-								Selecione, copie o resultado e cole no campo de assinatura de seu e-mail. 
-							</h5> 
-							<button type="button" class="close" data-dismiss="modal">
-								<span aria-hidden="true">×</span>
-							</button>
-						</div>
-						<div class="modal-body">
-							...
-						</div>
-						<div class="modal-footer">
-							 
-							<button type="button" class="btn btn-primary">
-								Save changes
-							</button> 
-							<button type="button" class="btn btn-secondary" data-dismiss="modal">
-								Close
-							</button>
-						</div>
-					</div>
-					
-				</div>
+
+
+				<p></p>
+
+
+
+
+
+
+
+
+
+				<p></p>
+
+
+
+				<!--style="border-collapse: collapse;
+			background-color: transparent;"-->
+				<table border="1" style="width: 600px;">
+					<tbody>
+						<tr>
+							<td rowspan="2" style="border-right: 2px solid #000; font-size: 28.0pt; width: 160px;">
+								<b style="padding: 0cm 5.4pt 0cm 5.4pt;">CTI</b>
+							</td>
+							<td style="padding: 0cm 5.4pt 0cm 5.4pt;">
+								<span style="font-size: 12.0pt;color: gray;">Pedro Hugo Nogueira França</span>
+							</td>
+							<td rowspan="5" style='width:125px; padding-bottom: 5px;'>
+								<img width="120" src="img/logo.jpg">
+							</td>
+							<td rowspan="5">
+								<img width=19 height=19 src="img/social01.png"><br>
+								<img width=19 height=19 src="img/social02.png"><br>
+								<img width=19 height=19 src="img/social03.png"><br>
+								<img width=19 height=19 src="img/social04.png">
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<b style="font-size: 12.0pt;color: gray;">Coordenador de TI</b>
+							</td>
+
+
+						</tr>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								2
+							</td>
+
+						</tr>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								2
+							</td>
+
+						</tr>
+						<tr>
+							<td>
+								1
+							</td>
+							<td>
+								2
+							</td>
+
+						</tr>
+					</tbody>
+				</table>
+
+				<!--
+				<a id="modal-317397" href="#modal-container-317397" role="button" class="btn" data-toggle="modal">Exibir
+					apenas o resultado.</a>
+
 				
+				<div class="modal fade" id="modal-container-317397" role="dialog" aria-labelledby="myModalLabel"
+					aria-hidden="true">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<h5 class="modal-title" id="myModalLabel">
+									Selecione, copie o resultado e cole no campo de assinatura de seu e-mail.
+								</h5>
+								<button type="button" class="close" data-dismiss="modal">
+									<span aria-hidden="true">×</span>
+								</button>
+							</div>
+							<div class="modal-body">
+								...
+							</div>
+							<div class="modal-footer">
+
+								<button type="button" class="btn btn-primary">
+									Save changes
+								</button>
+								<button type="button" class="btn btn-secondary" data-dismiss="modal">
+									Close
+								</button>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				-->
 			</div>
-			
 		</div>
 	</div>
-</div>
 
-    <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script>
-  </body>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/scripts.js"></script>
+</body>
+
 </html>
