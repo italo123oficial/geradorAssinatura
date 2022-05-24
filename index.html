@@ -48,38 +48,38 @@
 		<div class="row">
 			<div class="col-md-4">
 				<div class="alert alert-success">Primeira Coluna:</div>
-				<form role="form">
+				
 
 					<div class="form-group">
 						<label for="sigla-setor">
-							Sigla-setor (Linha 1)
+							Sigla do setor (Linha 1)
 						</label>
 						<input type="sigla" class="form-control" id="sigla"
 							placeholder="SJP / DRG / CTI / CRA | Linha 1">
 
 					</div>
 					<div class="form-group">
-						<label for="nome-setor1">
+						<label for="setor1">
 							Nome do setor (Linha 2 Cinza)
 						</label>
-						<input type="nome-setor1" class="form-control" id="nome-setor1"
+						<input type="setor1" class="form-control" id="setor1"
 							placeholder="Diretoria Geral | Coordenadoria de | Coordenador de | Linha 2 Cinza">
 
 					</div>
 					<div class="form-group">
-						<label for="nome-setor2">
+						<label for="setor2">
 							Nome do setor (Linha 3)
 						</label>
-						<input type="nome-setor2" class="form-control" id="nome-setor2"
+						<input type="setor2" class="form-control" id="setor2"
 							placeholder="Tecnologia da  | Comunicação | Linha 3">
 
 					</div>
 
 					<div class="form-group">
-						<label for="nome-setor3">
+						<label for="setor3">
 							Nome do setor (Linha 4)
 						</label>
-						<input type="nome-setor3" class="form-control" id="nome-setor3"
+						<input type="setor3" class="form-control" id="setor3"
 							placeholder="Informação  | Em branco | Linha 4">
 
 					</div>
@@ -94,26 +94,30 @@
 					</div>
 
 					<div class="form-group">
-						<label for="cargo">
-							Cargo
+						<label for="funcao">
+							Função
 						</label>
-						<input type="cargo" class="form-control" id="cargo" placeholder="Coordenador de TI">
+						<input type="funcao" class="form-control" id="funcao" placeholder="Coordenador / Servidor / Aluno">
 					</div>
 
 					<div class="form-group">
-						<label for="setor">
-							Setor
+						<label for="cargo">
+							Cargo
 						</label>
-						<input type="setor" class="form-control" id="setor" placeholder="Tecnologia da Informação">
+						<input type="cargo" class="form-control" id="cargo" placeholder="Técnico em Tecnologia da Informação">
 					</div>
 
 					<div class="form-group">
 						<label for="email">
-							Email/Ramal
+							Email | telefone
 						</label>
-						<input type="email" class="form-control" id="email"
+						<input type="contato" class="form-control" id="contato"
 							placeholder="fulano.de.tal@ifsp.edu.br | 17-99999-9999">
 					</div>
+					
+					<!-- Configurações Padrões Ocultas (site, logo, redes sociais)  -->
+					<div id="card-config" hidden>
+					<!-- primeiro div está fora do card -->
 					Espaçamento:
 					<div class="btn-group" role="group">
 
@@ -127,8 +131,7 @@
 							Grande
 						</button>
 					</div>
-					<!-- Configurações Padrões Ocultas (site, logo, redes sociais)  -->
-					<div id="card-config">
+
 						<div class="card">
 							<div class="card-header">
 								<a class="card-link collapsed" data-toggle="collapse" data-parent="#card-config"
@@ -194,192 +197,79 @@
 
 					</div>
 
-					<button type="submit" class="btn btn-primary">
+					<button class="btn btn-primary" onclick="CopyToClipboard('visualizacao')">
 						Gerar Assinatura
 					</button>
-				</form>
+				
 			</div>
 			<div class="col-md-8">
 
 				<div class="alert alert-success">Visualização:</div>
 
-
-				<table border=0>
-					<tr>
-						<td width=136 rowspan=2 valign=top style='width:120pt;border:none;
-  border-right:solid windowtext 1.0pt; 
-  padding:0cm 5.4pt 0cm 5.4pt;height:16.75pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><b><span style='font-size:28.0pt'>
-										CTI
-									</span></b> <b><span style='font-size:20.0pt'> </span></b></p>
-						</td>
-						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-      
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.75pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;color:gray;'>
-									PEDRO HUGO NOGUEIRA FRANÇA</span></p>
-						</td>
-						<td width=136 rowspan=5 valign=top style='width:101.8pt;border:none;
-    padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.75pt'>
-							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:normal'><img width=112 height=109 src="img/logo.jpg"></span> </p>
-						</td>
-						<td width=34 rowspan=5 style='width:25.8pt;padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.75pt'>
-							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a href="https://www.youtube.com/c/ifspriopreto"><img width=19 height=19
-										src="img/social01.png"></a></p>
-							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a href="https://www.twitter.com/ifspriopreto"><img width=19 height=19
-										src="img/social02.png"></a> </p>
-							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a href="https://www.facebook.com/ifspriopreto"><img width=19 height=19
-										src="img/social03.png"> </a> </p>
-							<p align=center style='margin-bottom:0cm;margin-bottom:.0001pt;
-  text-align:center;line-height:130%'><a href="https://www.instagram.com/ifsp_riopreto"><img border=0 width=19
-										height=19 src="img/social04.png"> </a> </p>
-						</td>
-					</tr>
-					<tr style='height:16.8pt'>
-						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-      
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'> <b><span style='font-size:12.0pt;
-  color:gray;'>Coordenador de TI </span></b></p>
-						</td>
-					</tr>
-					<tr style='height:16.8pt'>
-						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'> <b><span style='font-size:12.0pt;
- color:gray;'>Coordenadoria de</span></b><span style='font-size:12.0pt;color:gray; '> </span> </p>
-						</td>
-						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-      
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;color:gray;
-   '>Tecnologia da Informação </span></p>
-						</td>
-					</tr>
-					<tr style='height:16.8pt'>
-						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'> <b>Tecnologia da </b></p>
-						</td>
-						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-      
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><span style='font-size:12.0pt;color:gray;
-   '>pedro.franca@ifsp.edu.br </span></p>
-						</td>
-					</tr>
-					<tr style='height:16.8pt'>
-						<td width=136 valign=top style='width:101.85pt;border:none;border-right:solid windowtext 1.0pt;
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'> <b>Informação </b></p>
-						</td>
-						<td width=297 style='width:222.5pt;border:none;border-right:solid windowtext 1.0pt;
-      
-   padding:0cm 5.4pt 0cm 5.4pt;
-  height:16.8pt'>
-							<p style='margin-bottom:0cm;margin-bottom:.0001pt;line-height:
-  normal'><a href="https://sjp.ifsp.edu.br/"><b><span style='font-size:8.5pt;
-  font-family:"Arial","sans-serif";color:#259235'>https://sjp.ifsp.edu.br/</span></b></a> </p>
-						</td>
-					</tr>
-				</table>
-
-
-
-
-				<p></p>
-
-
-
-
-
-
-
-
-
-				<p></p>
-
-
-
 				<!--style="border-collapse: collapse;
 			background-color: transparent;"-->
-				<table border="1" style="width: 600px;">
+			
+				<table id="visualizacao" border="0" style="width: 600px;">
 					<tbody>
 						<tr>
-							<td rowspan="2" style="border-right: 2px solid #000; font-size: 28.0pt; width: 160px;">
-								<b style="padding: 0cm 5.4pt 0cm 5.4pt;">CTI</b>
+							<td rowspan="2" style="border-right: 2px solid #000; font-size: 28.0pt; width: auto;"><!--width: 160px;-->
+								<b id="viewSigla" name="viewSigla">CTI</b>
 							</td>
-							<td style="padding: 0cm 5.4pt 0cm 5.4pt;">
-								<span style="font-size: 12.0pt;color: gray;">Pedro Hugo Nogueira França</span>
+							<td style="border-right: 2px solid #000 ; padding: 0cm 5.4pt 0cm 5.4pt;">
+								<span id="viewNome" name="viewNome" style="font-size: 12.0pt;color: gray;">Pedro Hugo Nogueira França</span>
 							</td>
 							<td rowspan="5" style='width:125px; padding-bottom: 5px;'>
-								<img width="120" src="img/logo.jpg">
+								<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer"><img width="120" src="https://docs.google.com/uc?id=12vh9wFcmwQ68MdmSizdfwQvX7lmpmqlS"></a>
 							</td>
 							<td rowspan="5">
-								<img width=19 height=19 src="img/social01.png"><br>
-								<img width=19 height=19 src="img/social02.png"><br>
-								<img width=19 height=19 src="img/social03.png"><br>
-								<img width=19 height=19 src="img/social04.png">
+								<a href="https://www.youtube.com/c/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=137JrnvgANC9EgxFJAvf1vcvmc_I_TR5v"><br></a>
+								<a href="https://www.twitter.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=136UfHuaN_3ZLe2ExhgVqNyj0Q-uLa-YJ"><br></a>
+								<a href="https://www.facebook.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=134PRpZnJT1v8a_1C_xm-j1Nlc87qGksL"><br></a>
+								<a href="https://www.instagram.com/ifsp_riopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=12xXkMK0M9qhARCPkWbFZZAGbMPDYVogp"></a>
+								<!-- <a href="https://www.youtube.com/c/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="img/social01.png"><br></a>
+								<a href="https://www.twitter.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="img/social02.png"><br></a>
+								<a href="https://www.facebook.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="img/social03.png"><br></a>
+								<a href="https://www.instagram.com/ifsp_riopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="img/social04.png"></a> -->
 							</td>
 						</tr>
 						<tr>
-							<td>
-								<b style="font-size: 12.0pt;color: gray;">Coordenador de TI</b>
+							<td style="border-right: 2px solid #000 ; padding: 0cm 5.4pt 0cm 5.4pt;">
+								<b id="viewFuncao" name="viewFuncao" style="font-size: 12.0pt;color: gray;">Coordenador de T.I.</b>
 							</td>
 
 
 						</tr>
 						<tr>
-							<td>
-								1
+							<td style="border-right: 2px solid #000">
+								<b id="viewSetor1" name="viewSetor1" style="font-size: 12.0pt;color: gray;">Coordenadoria de</b>
 							</td>
-							<td>
-								2
-							</td>
-
-						</tr>
-						<tr>
-							<td>
-								1
-							</td>
-							<td>
-								2
+							<td style="border-right: 2px solid #000 ; padding: 0cm 5.4pt 0cm 5.4pt;"> 
+								<span id="viewCargo" name="viewCargo" style="font-size: 12.0pt;color: gray;">Técnico em Tecnologia da Informação</span>
 							</td>
 
 						</tr>
 						<tr>
-							<td>
-								1
+							<td style="border-right: 2px solid #000">
+								<b id="viewSetor2" name="viewSetor2" style="font-size: 12.0pt;">Tecnologia da </b>
 							</td>
-							<td>
-								2
+							<td style="border-right: 2px solid #000 ; padding: 0cm 5.4pt 0cm 5.4pt;">
+								<span id="viewContato" name="viewContato" style="font-size: 10.0pt;color: gray;">17-99789-0706 | pedro.franca@ifsp.edu.br</span>
+							</td>
+
+						</tr>
+						<tr>
+							<td style="border-right: 2px solid #000">
+								<b id="viewSetor3" name="viewSetor3" style="font-size: 12.0pt;">Informação</b>
+							</td>
+							<td style="border-right: 2px solid #000 ; padding: 0cm 5.4pt 0cm 5.4pt; ">
+								<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer"><b style='font-size:10pt;
+									font-family:"Arial","sans-serif"; color:#259235'>https://sjp.ifsp.edu.br/</b></a>
 							</td>
 
 						</tr>
 					</tbody>
 				</table>
-
+			
 				<!--
 				<a id="modal-317397" href="#modal-container-317397" role="button" class="btn" data-toggle="modal">Exibir
 					apenas o resultado.</a>
