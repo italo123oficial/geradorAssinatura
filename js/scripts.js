@@ -1,16 +1,30 @@
-	function CopyToClipboard(id)
+
+
+
+function changeWidth(c1,c2) {
+    document.getElementById("coluna1").style.width = c1+"px";
+    document.getElementById("coluna2").style.width = c2+"px";
+    let max = 0;
+    max =(parseInt(c1)+parseInt(c2)+160);
+    document.getElementById("visualizacao").style.width = max+"px";
+}
+
+
+    
+    function CopyToClipboard(id)
 	{
 	var r = document.createRange();
 	r.selectNode(document.getElementById(id));
 	window.getSelection().removeAllRanges();
 	window.getSelection().addRange(r);
 	document.execCommand('copy');
-    alert("Assinatura copiada para o clipboard, fazer o 'CTRL + V' no editor de assinatura do seu e-mail.\n"+document.getSelection());
+    alert("Assinatura copiada para o clipboard, fazer o 'CTRL + V' no editor de assinatura do seu e-mail.\n"+ document.getSelection());
     window.getSelection().removeAllRanges();  
 	}
 
+
     $("#gerar_assinatura").click(function(event){
-        CopyToClipboard('visualizacao');        
+        CopyToClipboard('visualizacao'); 
     });
 
 
