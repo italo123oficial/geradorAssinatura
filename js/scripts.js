@@ -8,6 +8,12 @@ function changeWidth(c1,c2) {
     max =(parseInt(c1)+parseInt(c2)+160);
     document.getElementById("visualizacao").style.width = max+"px";
 }
+var slider = document.getElementById("c1");
+var output = document.getElementById("coluna1").style.width;
+output.innerHTML = slider.value;
+slider.oninput = function() {
+    output.innerHTML = this.value;
+ }
 
 
     
