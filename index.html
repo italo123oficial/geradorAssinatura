@@ -22,92 +22,102 @@
 
 <body>
 
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
-				<h3>
+				<h3 style="text-align:center">
 					Gerador de Assinatura de E-Mail IFSP.SJP
-
 				</h3>
 			</div>
 		</div>
-
-		<div class="row container-fluid d-flex justify-content-center">
+	</div>
+	<div class="container">
+		<div class="row d-flex justify-content-center">
 			
 			<button class="btn btn-success alert-success" onclick="CopyToClipboard('visualizacao')">Copiar Assinatura</button><br/>
+			Clique no slider e utilize as setas direcionais<p></p>
+			
 			<div class="row">
 				<div class="d-flex justify-content-center mt-2 mb-3">
-						1ª coluna:
-						<input type="range" min="50" max="500" value="142" class="slider" id="c1" onchange="changeWidth(c1.value, c2.value)">
-				
-						2ª coluna:
-						<input type="range" min="100" max="600" value="280" class="slider" id="c2" onchange="changeWidth(c1.value, c2.value)">
-						<p></p>
+
+					<dl>
+						<dt>
+							<dd style="text-align: center;">
+								1ª coluna:
+								<input type="range" min="50" max="600" value="142" class="slider" id="c1" onchange="changeWidth(c1.value, c2.value)">
+								2ª coluna:
+								<input type="range" min="50" max="600" value="280" class="slider" id="c2" onchange="changeWidth(c1.value, c2.value)">
+								</dd>
+						</dt>
+						<dd>
+							<table id="visualizacao" border="0" style="width: 600px;">
+								<tbody>
+									<tr>
+										<td rowspan="2" id="coluna1" name="coluna1" style="border-right: 2px solid #000; font-size: 28.0pt; width: auto;">
+											<b id="viewSigla" name="viewSigla">CTI</b>
+										</td>
+										<td id="coluna2" name="coluna2" style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
+											<span id="viewNome" name="viewNome" style="font-size: 12.0pt;color: gray;">Fulano de Tal Beltrano</span>
+										</td>
+										<td rowspan="5" style='width:125px; padding-bottom: 5px;'>
+											<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer"><img id="logo" name="logo" width="120" src="https://docs.google.com/uc?id=12vh9wFcmwQ68MdmSizdfwQvX7lmpmqlS" alt="IFSP São José do Rio Preto"></a>
+										</td>
+										<td rowspan="5">
+											<a href="https://www.youtube.com/c/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=137JrnvgANC9EgxFJAvf1vcvmc_I_TR5v" alt="youtube.com/c/ifspriopreto"><br></a>
+											<a href="https://www.twitter.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=136UfHuaN_3ZLe2ExhgVqNyj0Q-uLa-YJ" alt="twitter.com/ifspriopreto"><br></a>
+											<a href="https://www.facebook.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=134PRpZnJT1v8a_1C_xm-j1Nlc87qGksL" alt="facebook.com/ifspriopreto"><br></a>
+											<a href="https://www.instagram.com/ifsp_riopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=12xXkMK0M9qhARCPkWbFZZAGbMPDYVogp" alt="instagram.com/ifsp_riopreto"></a>
+											
+										</td>
+									</tr>
+									<tr>
+										<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
+											<b id="viewFuncao" name="viewFuncao" style="font-size: 12.0pt;color: gray;">Coordenador</b>
+										</td>
+		
+		
+									</tr>
+									<tr>
+										<td style="border-right: 2px solid #000">
+											<b id="viewSetor1" name="viewSetor1" style="font-size: 12.0pt;color: gray;">Coordenadoria de</b>
+										</td>
+										<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;"> 
+											<span id="viewCargo" name="viewCargo" style="font-size: 12.0pt;color: gray;">Técnico em Tecnologia da Informação</span>
+										</td>
+		
+									</tr>
+									<tr>
+										<td style="border-right: 2px solid #000">
+											<b id="viewSetor2" name="viewSetor2" style="font-size: 12.0pt;">Tecnologia da </b>
+										</td>
+										<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
+											<span id="viewContato" name="viewContato" style="font-size: 10.0pt;color: gray;">fulano.de.tal@ifsp.edu.br | 17-99999-9999</span>
+										</td>
+		
+									</tr>
+									<tr>
+										<td style="border-right: 2px solid #000">
+											<b id="viewSetor3" name="viewSetor3" style="font-size: 12.0pt;">Informação</b>
+										</td>
+										<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt; ">
+											<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><b style='font-size:10pt;
+												font-family:"Arial","sans-serif"; color:#259235'>https://sjp.ifsp.edu.br/</b></a>
+										</td>
+		
+									</tr>
+								</tbody>
+							</table>
+							<p></p>
+						</dd>
+					</dl>
+						
 				</div>
 			</div>
 			<!--style="border-collapse: collapse;
 			background-color: transparent;"-->
+			
+			
 		
-			<table id="visualizacao" border="0" style="width: auto;">
-				<tbody>
-					<tr>
-						<td rowspan="2" id="coluna1" name="coluna1" style="border-right: 2px solid #000; font-size: 28.0pt; width: auto;">
-							<b id="viewSigla" name="viewSigla">CTI</b>
-						</td>
-						<td id="coluna2" name="coluna2" style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
-							<span id="viewNome" name="viewNome" style="font-size: 12.0pt;color: gray;">Fulano de Tal Beltrano</span>
-						</td>
-						<td rowspan="5" style='width:125px; padding-bottom: 5px;'>
-							<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer"><img id="logo" name="logo" width="120" src="https://docs.google.com/uc?id=12vh9wFcmwQ68MdmSizdfwQvX7lmpmqlS" alt="IFSP São José do Rio Preto"></a>
-						</td>
-						<td rowspan="5">
-							<a href="https://www.youtube.com/c/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=137JrnvgANC9EgxFJAvf1vcvmc_I_TR5v" alt="youtube.com/c/ifspriopreto"><br></a>
-							<a href="https://www.twitter.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=136UfHuaN_3ZLe2ExhgVqNyj0Q-uLa-YJ" alt="twitter.com/ifspriopreto"><br></a>
-							<a href="https://www.facebook.com/ifspriopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=134PRpZnJT1v8a_1C_xm-j1Nlc87qGksL" alt="facebook.com/ifspriopreto"><br></a>
-							<a href="https://www.instagram.com/ifsp_riopreto" target="_blank" rel="noopener noreferrer"><img width=19 height=19 src="https://docs.google.com/uc?id=12xXkMK0M9qhARCPkWbFZZAGbMPDYVogp" alt="instagram.com/ifsp_riopreto"></a>
-							
-						</td>
-					</tr>
-					<tr>
-						<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
-							<b id="viewFuncao" name="viewFuncao" style="font-size: 12.0pt;color: gray;">Coordenador</b>
-						</td>
-
-
-					</tr>
-					<tr>
-						<td style="border-right: 2px solid #000">
-							<b id="viewSetor1" name="viewSetor1" style="font-size: 12.0pt;color: gray;">Coordenadoria de</b>
-						</td>
-						<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;"> 
-							<span id="viewCargo" name="viewCargo" style="font-size: 12.0pt;color: gray;">Técnico em Tecnologia da Informação</span>
-						</td>
-
-					</tr>
-					<tr>
-						<td style="border-right: 2px solid #000">
-							<b id="viewSetor2" name="viewSetor2" style="font-size: 12.0pt;">Tecnologia da </b>
-						</td>
-						<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt;">
-							<span id="viewContato" name="viewContato" style="font-size: 10.0pt;color: gray;">fulano.de.tal@ifsp.edu.br | 17-99999-9999</span>
-						</td>
-
-					</tr>
-					<tr>
-						<td style="border-right: 2px solid #000">
-							<b id="viewSetor3" name="viewSetor3" style="font-size: 12.0pt;">Informação</b>
-						</td>
-						<td style="border-right: 2px solid #000 ; padding: 0cm 2.4pt 0cm 5.4pt; ">
-							<a href="https://sjp.ifsp.edu.br/" target="_blank" rel="noopener noreferrer" style="text-decoration:none"><b style='font-size:10pt;
-								font-family:"Arial","sans-serif"; color:#259235'>https://sjp.ifsp.edu.br/</b></a>
-						</td>
-
-					</tr>
-				</tbody>
-			</table>
-
-			<p></p>
-
 						
 					 
 						
@@ -159,7 +169,7 @@
 			<div class="col-md-6">
 
 				<!-- Coluna 2-->
-				<div class="alert alert-success">Segunda Coluna</div>
+				<div class="alert alert-success">Segunda Coluna:</div>
 				<div class="form-group">
 					<label for="nome">
 						Nome Completo
@@ -267,7 +277,12 @@
 		</div>
 	</div>
 	<div class="alert alert-success d-flex justify-content-center">
-		Exemplos
+		Exemplos:
+	</div>
+	<img src="img/Modelo_Setor.jpeg" alt="Modelo Setor">
+	<img src="img/Modelo_Professor.jpeg" alt="Modelo Modelo_Professor">
+	<img src="img/Modelo_Aluno.jpeg" alt="Modelo Aluno">
+	<div class="row container-fluid d-flex">
 	</div>
 	<!-- footer -->
 	<div class="row container-fluid d-flex justify-content-left">
