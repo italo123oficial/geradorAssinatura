@@ -24,7 +24,7 @@ slider.oninput = function() {
 	window.getSelection().removeAllRanges();
 	window.getSelection().addRange(r);
 	document.execCommand('copy');
-    alert("Assinatura copiada para o clipboard, fazer o 'CTRL + V' no editor de assinatura do seu e-mail.\n \n Obs: Caso algum texto esteja descendo de linha, deixe um espaço em branco maior entre as colunas.");
+    alert("Assinatura copiada para o clipboard, fazer o 'CTRL + V' no editor de assinatura do seu e-mail.\n\nObs: Caso algum texto esteja descendo de linha, deixe um espaço em branco maior entre as colunas.");
     window.getSelection().removeAllRanges();  
 	}
 
