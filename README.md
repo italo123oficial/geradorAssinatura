@@ -1,6 +1,6 @@
 # geradorAssinaturaIFSP-SJP
 
-https://pedr0hug0.github.io/geradorAssinatura/
+https://italo123oficial.github.io/geradorAssinatura/
 
 Foi criado um modelo de assinatura seguindo o modelo utilizado na reitoria do IFSP - São paulo e com funcionalidades de ajuste de colunas.
 
